@@ -1,0 +1,60 @@
+@import 'mixins';
+
+/*=================================================================*/
+/*                      SECTIONS
+/*=================================================================*/
+
+section.home {
+	background: $colordark;
+	padding: 0;
+	height: 100vh;
+	min-height: 100vh;
+	.intro {
+		margin: auto;
+		max-width: 540px;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		h1 {
+			color: #FFF;
+			font-size: 36px;
+		}
+		span {
+			color: #FFF;
+			font-size: 16px;
+		}
+	}
+	.social-icons {
+		li {
+			a {
+				color: #FFF;
+			}
+		}
+	}
+	&.light {
+		background: #F9F9FF;
+		.intro {
+			h1 {
+				color: $colordark;
+			}
+			span {
+				color: $colordefault;
+			}
+		}
+		.social-icons {
+			li {
+				a {
+					color: $colordark;
+					&:hover {
+						color: $coloryellow;
+					}
+				}
+			}
+		}
+	}
+}
+
+.avatar-image {
+  width: 170px;
+  clip-path: circle(60px at center);
+}

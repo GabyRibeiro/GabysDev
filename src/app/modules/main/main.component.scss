@@ -1,0 +1,14 @@
+@import 'mixins';
+
+main.content {
+	margin-left: 290px;
+	@include transition(.3s);
+	&.open {
+		opacity: .8;
+		-webkit-transform: translateX(290px);
+		-moz-transform: translateX(290px);
+		-ms-transform: translateX(290px);
+		-o-transform: translateX(290px);
+		transform: translateX(290px);
+	}
+}

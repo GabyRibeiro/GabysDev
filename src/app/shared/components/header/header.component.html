@@ -1,0 +1,26 @@
+<!-- desktop header -->
+<header class="desktop-header-1 d-flex align-items-start flex-column">
+
+  <!-- logo image -->
+  <div class="site-logo">
+      <a href="index-dark.html">
+          <img src="assets/images/logo.svg" alt="Bolby" />
+      </a>
+  </div>
+
+  <!-- main menu -->
+  <nav>
+      <ul class="vertical-menu scrollspy">
+        <ng-container *ngFor="let links of menu_links;">
+            <li><a href="#{{links.link}}" (click)="activeLink(links.link)"><i class="{{links.icon}}"></i>{{links.title}}</a></li>
+        </ng-container>
+      </ul>
+  </nav>
+
+  <!-- site footer -->
+  <div class="footer">
+      <!-- copyright text -->
+      <span class="copyright">© 2020 Bolby Template.</span>
+  </div>
+
+</header>
