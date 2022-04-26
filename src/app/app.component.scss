@@ -24,6 +24,23 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/*=================================================================*/
+/*                      RESPONSIVE SETTINGS
+/*=================================================================*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+	html,
+	body{
+		width:100%;
+		overflow-x:hidden;
+	}
+
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -1358,38 +1375,6 @@ only screen and (min-device-pixel-ratio: 1.5){
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.price-item {
 		padding: 40px 30px;
-	}
-}
-
-@media only screen and (max-width: 991px) {
-	header.desktop-header-1 {
-		-webkit-transform: translateX(-290px);
-		-moz-transform: translateX(-290px);
-		-ms-transform: translateX(-290px);
-		-o-transform: translateX(-290px);
-		transform: translateX(-290px);
-	}
-	header.mobile-header-1 {
-		display: block;
-	}
-	main.content {
-		margin-left: 0;
-	}
-	header.desktop-header-2 {
-		-webkit-transform: translateX(-110px);
-		-moz-transform: translateX(-110px);
-		-ms-transform: translateX(-110px);
-		-o-transform: translateX(-110px);
-		transform: translateX(-110px);
-	}
-	header.mobile-header-2 {
-		display: block;
-	}
-	main.content-2 {
-		margin-left: 0;
-	}
-	.desktop-header-3 .nav-link {
-		padding: 7px 0;
 	}
 }
 

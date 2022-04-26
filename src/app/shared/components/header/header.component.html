@@ -1,5 +1,17 @@
+<!-- mobile header -->
+<header class="mobile-header-1" [ngClass]="open ? 'open' : ''">
+  <div class="container">
+      <!-- menu icon -->
+      <div class="menu-icon d-inline-flex ms-3 mt-2">
+          <button (click)="toggleMenu()">
+              <span></span>
+          </button>
+      </div>
+  </div>
+</header>
+
 <!-- desktop header -->
-<header class="desktop-header-1 d-flex align-items-start flex-column">
+<header class="desktop-header-1 d-flex align-items-start flex-column" [ngClass]="open ? 'open' : ''">
 
   <!-- logo image -->
   <div class="site-logo">

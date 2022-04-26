@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { HomeModule } from './../components/home/home.module';
 import { RouterModule } from '@angular/router';
 import { MainComponent } from './main.component';
@@ -13,7 +14,8 @@ import { HomeComponent } from '../components/home/home.component';
   imports: [
     SharedModule,
     RouterModule.forChild(mainRoutes),
-    HomeModule
+    HomeModule,
+    CommonModule
   ],
   exports: [
     MainComponent

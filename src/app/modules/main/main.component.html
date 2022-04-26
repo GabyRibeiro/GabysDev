@@ -1,5 +1,5 @@
-<shared-header></shared-header>
+<shared-header ($opened)="opened($event)"></shared-header>
 
-<main class="content">
+<main class="content" [ngClass]="open ? 'open' : ''">
   <home></home>
 </main>

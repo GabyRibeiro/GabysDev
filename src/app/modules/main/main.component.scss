@@ -12,3 +12,9 @@ main.content {
 		transform: translateX(290px);
 	}
 }
+
+@media only screen and (max-width: 991px) {
+	main.content {
+		margin-left: 0;
+	}
+}
