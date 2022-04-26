@@ -16,12 +16,12 @@ section.home {
 		position: relative;
 		z-index: 1;
 		h1 {
-			color: #FFF;
+			color: $coloryellow;
 			font-size: 36px;
 		}
 		span {
 			color: #FFF;
-			font-size: 16px;
+			font-size: 20px;
 		}
 	}
 	.social-icons {
@@ -55,26 +55,12 @@ section.home {
 }
 
 .avatar-image {
-  width: 170px;
-  clip-path: circle(60px at center);
-}
-
-//TODO: Deixar a aniamção mais suave e uma animação mais legal!
-.rotator {
-  animation: rotatorAnimate 3s ease infinite;
-}
-
-@keyframes rotatorAnimate {
-	0% {
-    opacity: 0;
-    transform: rotateX(90def);
-  }
-  50% {
-    opacity: 1;
-    transform: rotateX(720deg);
-  }
-  100% {
-    opacity: 1;
-    transform: rotateX(720deg);
-  }
+  width: 210px;
+  height: 210px;
+  margin: 0 auto;
+  background-image: url('/assets/images/gaby.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
 }

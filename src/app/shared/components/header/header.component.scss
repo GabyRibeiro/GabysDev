@@ -31,7 +31,8 @@ header.desktop-header-1 {
 		transform: translateX(0);
 	}
 	.site-logo {
-
+    width: 100%;
+    max-width: 180px;
 	}
 	/* === Vertical Menu === */
 	.vertical-menu {
@@ -125,7 +126,7 @@ header.desktop-header-1 {
 		margin-top: auto;
 	}
 	.copyright {
-		color: #9C9AB3;
+		color: #fff;
 		font-size: 14px;
 	}
 	&.light {
@@ -144,6 +145,9 @@ header.desktop-header-1 {
 			color: $colorpink;
 		}
 	}
+  & a:hover {
+    color: $coloryellow;
+  }
 }
 
 header.mobile-header-1 {
