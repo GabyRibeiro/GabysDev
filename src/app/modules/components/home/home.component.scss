@@ -23,6 +23,9 @@ section.home {
 			color: #FFF;
 			font-size: 20px;
 		}
+    .avatar-image {
+      @include avatar-image(210px, 210px, '/assets/images/gaby.webp');
+    }
 	}
 	.social-icons {
 		li {
@@ -54,13 +57,3 @@ section.home {
 	}
 }
 
-.avatar-image {
-  width: 210px;
-  height: 210px;
-  margin: 0 auto;
-  background-image: url('/assets/images/gaby.webp');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 100%;
-}

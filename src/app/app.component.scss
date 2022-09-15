@@ -11,6 +11,7 @@
 html {
     margin: 0 !important;
     overflow: auto !important;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
 }
 
 /*=================================================================*/
@@ -343,66 +345,9 @@ section {
 }
 
 /*=================================================================*/
-/*                      PARALLAX SHAPES
-/*=================================================================*/
-.parallax {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	.layer {
-		position: absolute;
-	}
-	.p1 {
-		left: 10%;
-		top: 10%;
-	}
-	.p2 {
-		left: 25%;
-		top: 30%;
-	}
-	.p3 {
-		left: 15%;
-		bottom: 30%;
-	}
-	.p4 {
-		left: 10%;
-		bottom: 10%;
-	}
-	.p5 {
-		left: 45%;
-		top: 10%;
-	}
-	.p6 {
-		left: 40%;
-		bottom: 10%;
-	}
-	.p7 {
-		top: 20%;
-		right: 30%;
-	}
-	.p8 {
-		right: 30%;
-		bottom: 20%;
-	}
-	.p9 {
-		right: 10%;
-		top: 10%;
-	}
-	.p10 {
-		top: 45%;
-		right: 20%;
-	}
-	.p11 {
-		bottom: 10%;
-		right: 10%;
-	}
-}
-
-/*=================================================================*/
 /*                      HELPER
 /*=================================================================*/
+
 .help-block.with-errors {
 	color: red;
 	font-size: 12px;
@@ -799,72 +744,6 @@ section {
 /*=================================================================*/
 /*                      THEME ELEMENTS
 /*=================================================================*/
-/* === Timeline === */
-.timeline {
-  position: relative;
-}
-
-.timeline .timeline-container {
-  padding-left: 50px;
-  margin-bottom: 50px;
-  position: relative;
-  background-color: inherit;
-  width: 100%;
-  &:last-of-type {
-      margin-bottom: 0;
-  }
-}
-
-.timeline.edu .timeline-container::after {
-  content: '\e019';
-  background: #FFF;
-  font-family: 'simple-line-icons';
-  font-size: 24px;
-  color: $colorpink;
-  position: absolute;
-  left: -7px;
-  top: 0;
-  z-index: 1;
-}
-
-.timeline.exp .timeline-container::after {
-  content: '\e04b';
-  background: #FFF;
-  font-family: 'simple-line-icons';
-  font-size: 24px;
-  color: $colorpink;
-  position: absolute;
-  left: -7px;
-  top: 0;
-  z-index: 1;
-}
-
-.timeline .content {
-  position: relative;
-}
-
-.timeline .content .time {
-  color: #8B88B1;
-  font-size: 14px;
-}
-
-.timeline .content h3 {
-  font-size: 20px;
-  margin: 10px 0;
-}
-
-.timeline .content p {
-  margin: 0;
-}
-
-.timeline span.line {
-  position: absolute;
-  width: 1px;
-  background-color: $colorpink;
-  top: 30px;
-  bottom: 30px;
-  left: 34px;
-}
 
 /* === Social Icons === */
 .social-icons {
@@ -1298,16 +1177,16 @@ body.dark {
       }
   }
   .bg-dark {
-      background: #302f4e !important;
+      background: #191919 !important;
   }
   h1, h2, h3, h4, h5, h6 {
       color: #FFF;
   }
   .triangle-top:before {
-      border-bottom-color: #302f4e;
+      border-bottom-color: #191919;
   }
   .timeline.exp .timeline-container::after, .timeline.edu .timeline-container::after {
-      background: #302f4e;
+      background: #191919;
   }
   .portfolio-filter li {
       color: #FFF;
@@ -1328,7 +1207,7 @@ body.dark {
       background-image: url('/assets/images/map-light.png');
   }
   .white-popup {
-      background: #302f4e;
+      background: #191919;
   }
   footer.footer {
       border-top: solid 1px rgba(255, 255, 255, 0.1);
@@ -1338,16 +1217,16 @@ body.dark {
       background: #353353;
   }
   .bg-white {
-      background-color: #302f4e !important;
+      background-color: #191919 !important;
   }
   .blog-standard .meta li a,  .blog-standard .title a,  .comment-author .fn {
       color: #fff;
   }
   .blog-page-section .blog-pagination ul li {
-      background-color: #302f4e !important;
+      background-color: #191919 !important;
   }
   .blog-page-section .blog-single {
-      background-color: #302f4e !important;
+      background-color: #191919 !important;
   }
 }
 
@@ -1426,7 +1305,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 	body.dark {
 		.triangle-top-sm {
 			&:before {
-				border-bottom-color: #302f4e;
+				border-bottom-color: #191919;
 			}
 		}
 	}
@@ -1452,7 +1331,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 	body.dark {
 		.triangle-left-md {
 			&:before {
-				border-right-color: #302f4e;
+				border-right-color: #191919;
 			}
 		}
 	}
@@ -6894,9 +6773,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 /*=================================================================*/
 /*                      3D SPIN
 /*=================================================================*/
-body {
-  perspective: 1000px;
-}
+
 .spinner {
   display: inline-block;
   font-size: 50px;

@@ -14,3 +14,13 @@ $colordefault: #454360;
     -moz-transition: all $second ease-in-out;
         transition: all $second ease-in-out;
 }
+@mixin avatar-image($width, $height, $bkg-image) {
+  margin: 0 auto;
+  background-image: url($bkg-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  width: $width;
+  height: $height;
+}

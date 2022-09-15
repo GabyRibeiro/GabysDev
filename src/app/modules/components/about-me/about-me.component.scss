@@ -1,0 +1,56 @@
+@import 'mixins';
+
+/*=================================================================*/
+/*                      ABOUT ME
+/*=================================================================*/
+
+#about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar-image {
+  @include avatar-image(150px, 150px, '/assets/images/gaby2.jpg');
+}
+.rounded {
+  background-color: $coloryellow;
+
+  p {
+    color: $colordark;
+    font-weight: 500;
+  }
+}
+.fact-item {
+	.details {
+		margin-left: 60px;
+	}
+	.icon {
+		font-size: 36px;
+		color: #DEDEEA;
+		float: left;
+	}
+	.number {
+		font-size: 30px;
+		em {
+			font-style: normal;
+		}
+	}
+	p {
+		font-size: 16px;
+	}
+}
+
+.skill-item {
+	.skill-info {
+		h4 {
+			font-size: 16px;
+			font-weight: 500;
+      color: $colordark;
+		}
+		span {
+			font-size: 14px;
+      color: $colordark;
+		}
+	}
+}
