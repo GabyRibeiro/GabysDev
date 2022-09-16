@@ -6,9 +6,6 @@
 
 #about {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .avatar-image {
   @include avatar-image(150px, 150px, '/assets/images/gaby2.jpg');

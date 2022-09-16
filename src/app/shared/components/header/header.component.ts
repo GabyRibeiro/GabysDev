@@ -22,12 +22,12 @@ export class HeaderComponent implements OnInit {
       icon: 'icon-user-following',
       active: false
     },
-    {
-      title: 'Serviços',
-      link: 'services',
-      icon: 'icon-briefcase',
-      active: false
-    },
+    // {
+    //   title: 'Serviços',
+    //   link: 'services',
+    //   icon: 'icon-briefcase',
+    //   active: false
+    // },
     {
       title: 'Experiência',
       link: 'experience',

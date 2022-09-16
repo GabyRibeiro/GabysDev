@@ -1,6 +1,11 @@
 @import 'mixins';
 
 /* === Timeline === */
+
+#experience {
+  min-height: 100vh;
+}
+
 .timeline {
   position: relative;
   height: 100%;
