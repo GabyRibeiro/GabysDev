@@ -4,7 +4,7 @@ import { WorksComponent } from './works.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
   ],
   declarations: [WorksComponent],
   exports: [WorksComponent]

@@ -1,3 +1,5 @@
+import { MatDialog } from '@angular/material/dialog';
+import { WorkDialogComponent } from './components/work-dialog/work-dialog.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -136,11 +138,17 @@ export class WorksComponent implements OnInit {
     },
   ]
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
+  openDialog(work: WorkItem) {
+  this.dialog.open(WorkDialogComponent, {
+    data: work as WorkItem,
+  });
+
+  }
 }
 
 export interface WorkItem {

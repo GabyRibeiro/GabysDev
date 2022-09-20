@@ -23,7 +23,7 @@ import { WorksModule } from '../components/works/works.module';
     AboutMeModule,
     ExperienceModule,
     ContactModule,
-    WorksModule
+    WorksModule,
   ],
   exports: [
     MainComponent
