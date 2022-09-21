@@ -1,0 +1,38 @@
+<!-- section works -->
+<section id="works">
+
+  <div class="container">
+
+      <!-- section title -->
+      <h2 class="section-title wow fadeInUp mb-5">Recent works</h2>
+
+      <!-- portolio wrapper -->
+      <div class="row portfolio-wrapper">
+
+          <ng-container *ngFor="let work of workItems;">
+            <!-- portfolio item -->
+            <div class="col-md-4 col-sm-6 grid-item creative design" *ngIf="work.show">
+              <div class="portfolio-item rounded shadow-dark" (click)="openDetailsDialog(work)">
+                <div class="details">
+                    <span class="term">{{work.category}}</span>
+                    <h4 class="title">{{work.title}}</h4>
+                    <span class="more-button"><i class="icon-options"></i></span>
+                </div>
+                <div class="thumb">
+                    <img src="assets/images/works/{{work.thumb}}.jpg" alt="Portfolio-title" />
+                    <div class="mask"></div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+
+      </div>
+
+      <!-- more button -->
+      <div class="load-more text-center mt-4">
+          <button (click)="loadMore()" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</button>
+      </div>
+
+  </div>
+
+</section>

@@ -16,13 +16,16 @@ section.home {
 		position: relative;
 		z-index: 1;
 		h1 {
-			color: #FFF;
+			color: $coloryellow;
 			font-size: 36px;
 		}
 		span {
 			color: #FFF;
-			font-size: 16px;
+			font-size: 20px;
 		}
+    .avatar-image {
+      @include avatar-image(210px, 210px, '/assets/images/gaby.webp');
+    }
 	}
 	.social-icons {
 		li {
@@ -54,7 +57,3 @@ section.home {
 	}
 }
 
-.avatar-image {
-  width: 170px;
-  clip-path: circle(60px at center);
-}

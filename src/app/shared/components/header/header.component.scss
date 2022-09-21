@@ -12,7 +12,7 @@ header.desktop-header-1 {
 	left: 0;
 	overflow-y: auto;
 	overflow-x: hidden;
-	height: 100vh;
+	height: 100%;
 	min-height: 100vh;
 	top: 0;
 	width: 290px;
@@ -31,7 +31,8 @@ header.desktop-header-1 {
 		transform: translateX(0);
 	}
 	.site-logo {
-
+    width: 100%;
+    max-width: 180px;
 	}
 	/* === Vertical Menu === */
 	.vertical-menu {
@@ -125,7 +126,7 @@ header.desktop-header-1 {
 		margin-top: auto;
 	}
 	.copyright {
-		color: #9C9AB3;
+		color: #fff;
 		font-size: 14px;
 	}
 	&.light {
@@ -144,6 +145,9 @@ header.desktop-header-1 {
 			color: $colorpink;
 		}
 	}
+  & a:hover {
+    color: $coloryellow;
+  }
 }
 
 header.mobile-header-1 {
@@ -197,10 +201,10 @@ header.mobile-header-1 {
 		}
 	}
 	.site-logo {
-		display: inline-block;
-		img {
-			max-height: 30px;
-		}
+    width: 100%;
+    max-width: 150px;
+    display: inline-block;
+    height: auto;
 	}
 	&.light {
 		background: #F9F9FF;
@@ -210,5 +214,22 @@ header.mobile-header-1 {
 				background: $colordark;
 			}
 		}
+	}
+}
+
+/*=================================================================*/
+/*                      RESPONSIVE SETTINGS
+/*=================================================================*/
+
+@media only screen and (max-width: 991px) {
+	header.desktop-header-1 {
+		-webkit-transform: translateX(-290px);
+		-moz-transform: translateX(-290px);
+		-ms-transform: translateX(-290px);
+		-o-transform: translateX(-290px);
+		transform: translateX(-290px);
+	}
+	header.mobile-header-1 {
+		display: block;
 	}
 }
