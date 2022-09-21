@@ -40,12 +40,12 @@ export class HeaderComponent implements OnInit {
       icon: 'icon-layers',
       active: false
     },
-    {
-      title: 'Contato',
-      link: 'contact',
-      icon: 'icon-bubbles',
-      active: false
-    },
+    // {
+    //   title: 'Contato',
+    //   link: 'contact',
+    //   icon: 'icon-bubbles',
+    //   active: false
+    // },
   ];
 
   open: boolean = false;

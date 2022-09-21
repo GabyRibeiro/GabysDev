@@ -10,6 +10,7 @@ import { mainRoutes } from './main.routing';
 import { HomeComponent } from '../components/home/home.component';
 import { ExperienceModule } from '../components/experience/experience.module';
 import { WorksModule } from '../components/works/works.module';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [

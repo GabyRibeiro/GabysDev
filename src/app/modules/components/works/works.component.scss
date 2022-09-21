@@ -17,8 +17,10 @@
 .portfolio-item {
 	position: relative;
 	overflow: hidden;
+  cursor: pointer;
 	.thumb {
 		overflow: hidden;
+    height: 160px;
 	}
 	.details {
 		color: #FFF;

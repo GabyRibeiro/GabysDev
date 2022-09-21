@@ -1,0 +1,11 @@
+@import 'mixins';
+
+.mat-dialog-container {
+  max-width: 50vw !important;
+  padding: 0!important;
+  background-color: $coloryellow !important;
+}
+
+.cdk-overlay-container {
+  overflow: auto;
+}

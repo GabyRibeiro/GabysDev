@@ -1,10 +1,11 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, ViewEncapsulation } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-work-dialog',
   templateUrl: './work-dialog.component.html',
-  styleUrls: ['./work-dialog.component.scss']
+  styleUrls: ['./work-dialog.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class WorkDialogComponent implements OnInit {
 

@@ -1,2 +1,8 @@
-<img src="assets/images/works/{{data.thumb}}" alt="Title" />
-<a [href]="data.link" class="btn btn-default">View</a>
+<div mat-dialog-content>
+  <img src="assets/images/works/{{data.thumb}}.jpg" alt="Title" />
+
+</div>
+
+<div mat-dialog-actions class="p-3 d-flex align-items-center justify-content-center" *ngIf="data.link">
+  <a [href]="data.link" target="_blank" class="btn btn-default h3">View Site</a>
+</div>
