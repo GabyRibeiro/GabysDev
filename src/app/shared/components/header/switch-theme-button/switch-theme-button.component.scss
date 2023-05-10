@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .theme-icon {
   position: absolute;
   top: 20px;
@@ -10,7 +12,7 @@
   }
 
   &.dark-theme svg path {
-    fill: #fff;
+    fill: $colorlight;
   }
 
   &.light-theme {
@@ -19,11 +21,34 @@
       height: 40px;
 
       path {
-        fill: #fff;
+        fill: $colorlight;
       }
 
     }
   }
 
 
+}
+
+/*=================================================================*/
+/*                      LIGHT MODE
+/*=================================================================*/
+
+body.light {
+  .theme-icon {
+    &.dark-theme svg path {
+      fill: $colordark;
+    }
+
+    &.light-theme {
+      svg {
+        path {
+          fill: $colordark;
+        }
+
+      }
+    }
+
+
+  }
 }

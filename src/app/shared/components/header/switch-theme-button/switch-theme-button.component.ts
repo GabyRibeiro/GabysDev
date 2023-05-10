@@ -1,11 +1,12 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Theme, appConfig } from 'src/app/app.config';
 import { AppService } from 'src/app/app.service';
 
 @Component({
   selector: 'switch-theme-button',
   templateUrl: './switch-theme-button.component.html',
-  styleUrls: ['./switch-theme-button.component.scss']
+  styleUrls: ['./switch-theme-button.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class SwitchThemeButtonComponent implements OnInit {
 

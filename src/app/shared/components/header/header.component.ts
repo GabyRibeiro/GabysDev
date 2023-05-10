@@ -1,11 +1,16 @@
-import { Component, OnInit, ElementRef, Renderer2, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer2, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
+import { Theme, appConfig } from 'src/app/app.config';
+import { AppService } from 'src/app/app.service';
 
 @Component({
   selector: 'shared-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent implements OnInit {
+
+  currentTheme: Theme = appConfig.theme;
 
   @Output() $opened = new EventEmitter<any>();
 
@@ -50,9 +55,10 @@ export class HeaderComponent implements OnInit {
 
   open: boolean = false;
 
-  constructor(private _el: ElementRef, private _renderer: Renderer2) { }
+  constructor(private _el: ElementRef, private _renderer: Renderer2, private _appService: AppService) { }
 
   ngOnInit() {
+    this._appService.getTheme$().subscribe(t => this.currentTheme = t);
   }
 
   activeLink(link: string) {

@@ -7,5 +7,5 @@ export interface AppConfig
 }
 
 export const appConfig: AppConfig = {
-  theme : 'dark',
+  theme : 'light',
 };

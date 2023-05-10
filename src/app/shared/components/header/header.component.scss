@@ -1,12 +1,44 @@
 @import 'mixins';
 
 /*=================================================================*/
+/*                      LIGHT MODE
+/*=================================================================*/
+
+body.light {
+  header.desktop-header-1 {
+    .site-logo {
+      svg {
+        g {
+          fill: $colorpink;
+        }
+      }
+    }
+    color: $colordark;
+    border-right: solid 1px rgb(0 0 0 / 12%);
+    .vertical-menu li .nav-link.active {
+      color: $colorpink;
+    }
+    .vertical-menu li a {
+      color: $colordark;
+      &:hover {
+        color: $colorpink;
+      }
+    }
+    .vertical-menu li i {
+      color: $colorpink;
+    }
+    .copyright {
+      color: $colordark;
+    }
+
+  }
+}
+
+/*=================================================================*/
 /*                      HEADER
 /*=================================================================*/
 header.desktop-header-1 {
-	color: #FFF;
 	border-right: solid 1px rgba(255,255,255,0.1);
-	background: $colordark;
 	padding: 50px 40px 40px;
 	position: fixed;
 	left: 0;
@@ -128,22 +160,6 @@ header.desktop-header-1 {
 	.copyright {
 		color: #fff;
 		font-size: 14px;
-	}
-	&.light {
-		background: #F9F9FF;
-		border-right: solid 1px rgba(0,0,0,0.05);
-		.vertical-menu li .nav-link.active {
-			color: $colorpink;
-		}
-		.vertical-menu li a {
-			color: $colordark;
-			&:hover {
-				color: $colorpink;
-			}
-		}
-		.vertical-menu li i {
-			color: $colorpink;
-		}
 	}
   & a:hover {
     color: $coloryellow;
