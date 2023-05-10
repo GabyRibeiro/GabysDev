@@ -389,17 +389,6 @@ section {
 	left: 0;
 	width: 100%;
 	z-index: 1;
-	&.light {
-		span {
-			color: $colordefault;
-		}
-		.mouse {
-			border-color: $colordark;
-			.wheel {
-				background: $colordark;
-			}
-		}
-	}
 }
 
 @-webkit-keyframes ani-mouse {
@@ -6755,6 +6744,18 @@ body.light {
     li {
       a:hover {
           color: $colorpink;
+      }
+    }
+  }
+
+  .scroll-down {
+    span {
+      color: $colordefault;
+    }
+    .mouse {
+      border-color: $colordark;
+      .wheel {
+        background: $colordark;
       }
     }
   }
