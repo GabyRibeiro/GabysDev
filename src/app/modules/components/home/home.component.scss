@@ -18,6 +18,7 @@ section.home {
 		h1 {
 			color: $coloryellow;
 			font-size: 36px;
+      font-family: "Rubik", sans-serif;
 		}
 		span {
 			color: #FFF;
@@ -27,13 +28,6 @@ section.home {
       @include avatar-image(210px, 210px, '/assets/images/gaby.webp');
     }
 	}
-	.social-icons {
-		li {
-			a {
-				color: #FFF;
-			}
-		}
-	}
 	&.light {
 		background: #F9F9FF;
 		.intro {
@@ -42,16 +36,6 @@ section.home {
 			}
 			span {
 				color: $colordefault;
-			}
-		}
-		.social-icons {
-			li {
-				a {
-					color: $colordark;
-					&:hover {
-						color: $coloryellow;
-					}
-				}
 			}
 		}
 	}
