@@ -489,6 +489,12 @@ section {
 /*=================================================================*/
 /*                     BUTTONS
 /*=================================================================*/
+
+button {
+  // Remove focus around button
+  outline:none;
+}
+
 .btn {
   border-radius: 30px;
   font-family: $fonthead;

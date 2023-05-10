@@ -1,0 +1,29 @@
+.theme-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  &.dark-theme svg path {
+    fill: #fff;
+  }
+
+  &.light-theme {
+    svg {
+      width: 40px;
+      height: 40px;
+
+      path {
+        fill: #fff;
+      }
+
+    }
+  }
+
+
+}
